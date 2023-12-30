@@ -1,20 +1,23 @@
-[pAlerts | Raid Notification on Telegram]
+This Rust plugin allows the Rust server to send notifications to Telegram about raid events, including destruction of buildings and doors
 
-Описание:
-Этот Rust-плагин позволяет серверу Rust отправлять уведомления в Telegram о событиях рейда, включая разрушение построек и дверей.
-Ключевые функции:
-- Отправка уведомлений в Telegram о разрушении построек.
-- Оповещение о разрушении дверей, включая типы дверей.
-- Поддержка настраиваемого бот-токена для Telegram API.
-- Возможность связать игровой Steam аккаунт с Telegram ID для персональных уведомлений.
+# Description:
 
-Конфигурация:
-Для настройки плагина необходимо указать бот-токен для Telegram API в конфигурационном файле.
+Send notifications to Telegram about building destruction.
+Door destruction notifications, including door types.
+Support for customisable bot token for Telegram API.
+Ability to link game Steam account with Telegram ID for personalised notifications.
 
-Пример конфигурации:
-{
-    "bot_token": "YOUR_BOT_TOKEN"
-}
+# Settings:
+To customise the plugin, you need to specify the bot token for Telegram API in the configuration file.
 
-Автор:
-Автор этого плагина: promise
+```
+{ "bot_token": "YOUR_BOT_TOKEN" }
+```
+
+# Commands:
+
+* `/connect [telegram id]` - Start linking your Telegram account (It is necessary that the user is authorised in the bot in advance)
+* `/check [code]` - End account linking
+ 
+
+***Author: promise***
