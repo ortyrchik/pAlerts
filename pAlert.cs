@@ -132,7 +132,7 @@ namespace Oxide.Plugins
             }
 
             // дверь
-            if (entityType.Contains("door", StringComparison.OrdinalIgnoreCase))
+            if (entityType.IndexOf("door", StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 // сам себя рейдит
                 if (owner != null && attacker != owner)
@@ -146,6 +146,7 @@ namespace Oxide.Plugins
                     }
                 }
             }
+
         }
 
 
@@ -177,7 +178,7 @@ namespace Oxide.Plugins
             string randomCode = GenerateRandomCode();
             SendTelegramMessage(telegramId, $"[pAlert] Для завершения привязки введите команду: /check {randomCode}");
 
-            
+
             UserTelegramIDs[steamId] = telegramId;
             ActiveVerificationCodes[telegramId] = steamId;
             VerificationCodes[telegramId] = randomCode;
