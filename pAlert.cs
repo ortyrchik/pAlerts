@@ -124,7 +124,7 @@ namespace Oxide.Plugins
 
                         if (owner != null && UserTelegramIDs.TryGetValue(owner.UserIDString, out string chatId))
                         {
-                            string message = $"{attacker.displayName} разрушил ваше строение: качество {buildingGrade} ({entityType}) на координатах {entityPosition}.";
+                            string message = $"{attacker.displayName} разрушил ваше строение: качество {buildingGrade} ({entityType}) на координатах {entityPosition}";
                             SendTelegramMessage(chatId, message);
                         }
                     }
