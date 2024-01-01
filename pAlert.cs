@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace Oxide.Plugins
 {
-    [Info("pAlert", "promise", "1.0.1")]
+    [Info("pAlert", "promise", "1.0.2")]
     [Description("Alert telegram when raid")]
     class pAlert : RustPlugin
     {
