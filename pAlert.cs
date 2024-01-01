@@ -236,7 +236,7 @@ namespace Oxide.Plugins
 
             // дверь
 
-            if (entityType.Contains("door", StringComparison.OrdinalIgnoreCase))
+            if (entityType.IndexOf("door", StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 string doorType = GetDoorDescription(entity.ShortPrefabName, attacker.UserIDString);
 
