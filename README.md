@@ -11,7 +11,10 @@ Ability to link game Steam account with Telegram ID for personalised notificatio
 To customise the plugin, you need to specify the bot token for Telegram API in the configuration file.
 
 ```
-{ "bot_token": "YOUR_BOT_TOKEN" }
+{
+"bot_token": "YOUR_BOT_TOKEN" 
+"Language": "en"
+}
 ```
 
 # Commands:
